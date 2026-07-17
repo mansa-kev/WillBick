@@ -756,10 +756,13 @@ a {
   padding-right: 3.5rem;
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
-  background-image: url('assets/hero_left_world.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: 
+    linear-gradient(135deg, rgba(6, 9, 16, 0.72) 0%, rgba(11, 15, 25, 0.58) 50%, rgba(11, 15, 25, 0.75) 100%),
+    url('assets/hero-left-1.png'),
+    url('assets/hero-left-2.png');
+  background-size: 100% 100%, 50% 100%, 50% 100%;
+  background-position: center, 0% 0%, 100% 0%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   z-index: 2;
   text-align: left;
 }
@@ -787,6 +790,22 @@ a {
 .hero-content {
   max-width: 680px;
   text-align: left;
+  background: rgba(11, 15, 25, 0.48);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 3.2rem 3rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 2rem 1.5rem;
+    border-radius: 18px;
+  }
 }
 
 .hero-content .hero-badges {
