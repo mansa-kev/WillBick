@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://willbick.co.ke/sitemap.xml
