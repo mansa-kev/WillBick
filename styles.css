@@ -690,6 +690,63 @@ a {
   overflow: hidden;
 }
 
+/* Subpage Hero Banner (Compact & Proportional on Laptops) */
+.subpage-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 4.5rem 1.5rem 3.5rem 1.5rem;
+  background-color: #0b0f19;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+}
+
+.subpage-hero .container {
+  position: relative;
+  z-index: 3;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.subpage-hero h1 {
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0.75rem 0 1rem 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 2px 6px rgba(0, 0, 0, 0.95);
+}
+
+.subpage-hero .hero-subtitle {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: #f1f5f9;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 720px;
+  text-shadow: 0 3px 15px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+.visas-hero {
+  background-image: linear-gradient(135deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.75) 100%), url('assets/hero-visas-bg.png');
+}
+
+.scholarships-hero {
+  background-image: linear-gradient(135deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.75) 100%), url('assets/hero-scholarships-bg.jpg');
+}
+
+.placements-hero {
+  background-image: linear-gradient(135deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.75) 100%), url('assets/hero-placements-bg.png');
+}
+
+.travel-hero {
+  background-image: linear-gradient(135deg, rgba(11, 15, 25, 0.88) 0%, rgba(11, 15, 25, 0.75) 100%), url('assets/hero-travel-bg.png');
+}
+
 .hero-left {
   position: relative;
   display: flex;
@@ -699,7 +756,7 @@ a {
   padding-right: 3.5rem;
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
-  background-image: linear-gradient(135deg, rgba(6, 9, 16, 0.94) 0%, rgba(11, 15, 25, 0.86) 55%, rgba(11, 15, 25, 0.96) 100%), url('assets/hero_left_world.jpg');
+  background-image: url('assets/hero_left_world.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
